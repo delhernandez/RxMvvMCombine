@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1506E3291E6C1900EDEC6F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1506E2291E6C1900EDEC6F /* ViewModel.swift */; };
 		FC59A9E42919735D00BD0EA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59A9E32919735D00BD0EA9 /* AppDelegate.swift */; };
 		FC59A9E62919735D00BD0EA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59A9E52919735D00BD0EA9 /* SceneDelegate.swift */; };
 		FC59A9E82919735D00BD0EA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59A9E72919735D00BD0EA9 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC1506E2291E6C1900EDEC6F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		FC59A9E02919735D00BD0EA9 /* RxMvvM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMvvM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC59A9E32919735D00BD0EA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC59A9E52919735D00BD0EA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				FC59A9E32919735D00BD0EA9 /* AppDelegate.swift */,
 				FC59A9E52919735D00BD0EA9 /* SceneDelegate.swift */,
 				FC59A9E72919735D00BD0EA9 /* ViewController.swift */,
+				FC1506E2291E6C1900EDEC6F /* ViewModel.swift */,
 				FC59A9E92919735D00BD0EA9 /* Main.storyboard */,
 				FC59A9EC2919735E00BD0EA9 /* Assets.xcassets */,
 				FC59A9EE2919735E00BD0EA9 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				FC59A9E82919735D00BD0EA9 /* ViewController.swift in Sources */,
 				FC59A9E42919735D00BD0EA9 /* AppDelegate.swift in Sources */,
+				FC1506E3291E6C1900EDEC6F /* ViewModel.swift in Sources */,
 				FC59A9E62919735D00BD0EA9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
