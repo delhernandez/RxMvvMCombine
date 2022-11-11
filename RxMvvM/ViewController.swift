@@ -19,42 +19,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        _ = viewModel.$isLoading
-            .subscribe(on: DispatchQueue.main)
-            .sink(receiveValue: { isLoading in
-                if(isLoading){
-                    OperationQueue.main.addOperation({
-                        self.imageIV.isHidden = true
-                        self.loader.startAnimating()
-                        self.loader.isHidden = false
-                    })
-                }else {
-                    OperationQueue.main.addOperation({
-                        self.imageIV.isHidden = false
-                        self.loader.isHidden = true
-                        self.loader.stopAnimating()
-                    })
-                }
-            })
+        subscribeToLoadingState()
         
-        _ = viewModel.$imageData
-            .subscribe(on: DispatchQueue.main)
-            .sink(receiveValue: { imageData in
-                guard let data = imageData else {
-                    OperationQueue.main.addOperation({
-                        self.imageIV.isHidden = true
-                    })
-                    return
-                }
-                if let image = UIImage(data: data){
-                    OperationQueue.main.addOperation({
-                        self.imageIV.image = image
-                        self.imageIV.isHidden = false
-                    })
-                }
-            })
+        subscribeToImageState()
         
         viewModel.loadImage()
+    }
+    
+    
+    func subscribeToLoadingState() {
+       // TODO
+        
+    }
+    
+    func subscribeToImageState  () {
+        // TODO
     }
     
 }
