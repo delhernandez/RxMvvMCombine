@@ -10,6 +10,8 @@ import Combine
 
 class ViewModel {
     
+    var stringEvents = ["A", "B", "C", "D", "E"].publisher
+    
     private let randomImageUrl = "https://picsum.photos/700/400"
     
     @Published var isLoading: Bool
